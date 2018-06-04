@@ -46,6 +46,9 @@
     <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
     
     
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
     <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
     <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
@@ -79,7 +82,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>qinxiaohui</title>
+    <title>rancher2.0与k8s | qinxiaohui</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="default"  data-spy="scroll" data-target=".list-group">
     
@@ -99,7 +102,7 @@
   <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
   <ul id="menu">
     
-    <li><a href="/" class="current">Home</a></li>
+    <li><a href="/">Home</a></li>
     
     <li><a href="/archives/">Archives</a></li>
     
@@ -116,24 +119,23 @@
         <div class="main-container">
           <div class="content">
             
-
-<section id="index" class="index">
+<section id="post" class="post">
   
-  <article class="index-post card" itemscope itemtype="http://schema.org/Article">
+  <article class="post-container card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
       <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/04/rancher2-0与k8s/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="sunxiaogyang">
-        <meta itemprop="description" content="记录美好时光">
-        <meta itemprop="image" content="/images/avatar.png">
+       <meta itemprop="name" content="sunxiaogyang">
+       <meta itemprop="description" content="记录美好时光">
+       <meta itemprop="image" content="/images/avatar.png">
       </span>
       <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="qinxiaohui">
+       <meta itemprop="name" content="qinxiaohui">
       </span>
     </div>
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/06/04/rancher2-0与k8s/" itemprop="url">rancher2.0与k8s</a>
+       <span class="">rancher2.0与k8s</span>
       </h1>
       <div class="post-meta">
         
@@ -148,7 +150,6 @@
       </div>
     </header>
     <main class="post-body" itemprop="articleBody">
-      
       <h1 id="k8s与rancher"><a href="#k8s与rancher" class="headerlink" title="k8s与rancher"></a>k8s与rancher</h1><p>在这几天里面，我做了下面的事情。</p>
 <p>1.使用rancher1.6 基于cattle搭建，并用docker-compose部署应用。</p>
 <p>2.使用rancher1.6 搭建k8s，并用kubectl 工具部署应用</p>
@@ -307,146 +308,37 @@
 <li>Canal 就提供了将 Flannel 和 Calico组合的方案。可以提供network policy controller，实现网络的隔离。</li>
 </ul>
 
-      
     </main>
     <footer class="post-footer">
+      
       
     </footer>
   </article>
   
-  <article class="index-post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/myFirst/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="sunxiaogyang">
-        <meta itemprop="description" content="记录美好时光">
-        <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="qinxiaohui">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/05/23/myFirst/" itemprop="url">myFirst</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-05-23T23:28:46+08:00">2018-05-23 23:28:46</time></span>
-        </span>
-        
-        
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-body" itemprop="articleBody">
-      
-      
-      
-    </main>
-    <footer class="post-footer">
-      
-    </footer>
-  </article>
   
-  <article class="index-post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/My-New-Post/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="sunxiaogyang">
-        <meta itemprop="description" content="记录美好时光">
-        <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="qinxiaohui">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/05/23/My-New-Post/" itemprop="url">My New Post</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-05-23T09:45:36+08:00">2018-05-23 09:45:36</time></span>
-        </span>
-        
-        
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-body" itemprop="articleBody">
-      
-      <p>helloworld</p>
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">Reward</button>
+  <div id="qr" class="qr" style="display: none;">
+    
+    
+    
+  </div>
+</div>
 
-      
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        
-        
-        
-        <a class="post-tag button" href="/tags/helloworld/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>helloworld</a>
-        
-      </div>
-      
-    </footer>
-  </article>
-  
-  <article class="index-post card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/hello-world/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="sunxiaogyang">
-        <meta itemprop="description" content="记录美好时光">
-        <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="qinxiaohui">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/05/23/hello-world/" itemprop="url">Hello World</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-05-23T09:35:13+08:00">2018-05-23 09:35:13</time></span>
-        </span>
-        
-        
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-body" itemprop="articleBody">
-      
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-      
-    </main>
-    <footer class="post-footer">
-      
-    </footer>
-  </article>
   
+  
+  <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+      <a href="/2018/05/23/myFirst/" rel="next" title="myFirst"><i class="fas fa-angle-left"></i><span class="nav-title">myFirst</span></a>
+      
+    </div>
+    <div class="post-nav-prev post-nav-item">
+      
+    </div>
+  </div>
   
   
   
@@ -499,6 +391,20 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <div><i class="fas fa-list-ol"></i>Table of Contents</div>
+  <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#k8s与rancher"><span class="toc-text">k8s与rancher</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#容器"><span class="toc-text">容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开源容器编排技术"><span class="toc-text">开源容器编排技术</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cattle与k8s的差异"><span class="toc-text">cattle与k8s的差异</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rancher1-6-升级到rancher2-0"><span class="toc-text">rancher1.6 升级到rancher2.0</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Paas平台"><span class="toc-text">Paas平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rancher1-6到2-0-术语及概念变化对比"><span class="toc-text">rancher1.6到2.0 术语及概念变化对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rancher1-6升级到2-0"><span class="toc-text">rancher1.6升级到2.0</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rancher2-0-三种节点类型"><span class="toc-text">rancher2.0 三种节点类型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#k8s的概念"><span class="toc-text">k8s的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文档"><span class="toc-text">文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kubernets-运行时"><span class="toc-text">kubernets 运行时</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#kubelet-运行时"><span class="toc-text">kubelet 运行时</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#容器的调度"><span class="toc-text">容器的调度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Labels-and-Selectors"><span class="toc-text">Labels and Selectors</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#—-使用场景"><span class="toc-text">— 使用场景</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#service-type"><span class="toc-text">service type</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#k8d里面的三种IP"><span class="toc-text">k8d里面的三种IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#服务发现"><span class="toc-text">服务发现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#volumn"><span class="toc-text">volumn</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#生命周期"><span class="toc-text">生命周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Access-Modes"><span class="toc-text">Access Modes</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#网络"><span class="toc-text">网络</span></a></li></ol></li></ol></li></ol></div>
+</div>
+
+
+
     
     
     
